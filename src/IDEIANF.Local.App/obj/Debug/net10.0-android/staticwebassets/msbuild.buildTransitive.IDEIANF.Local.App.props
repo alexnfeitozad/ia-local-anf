@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\IDEIANF.Local.App.props" />
-</Project>

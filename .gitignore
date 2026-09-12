@@ -1,0 +1,14 @@
+# .NET / VS / MAUI artifacts
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.log
+*.pdb
+*.cache
+*.DS_Store
+Thumbs.db
