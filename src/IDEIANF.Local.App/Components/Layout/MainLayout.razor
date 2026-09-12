@@ -1,0 +1,36 @@
+﻿@inherits LayoutComponentBase
+
+<div class="ide-shell">
+    <header class="topbar">
+        <div class="brand-block">
+            <span class="brand">IDEIANF Local</span>
+            <span class="caption">Agent Workspace</span>
+        </div>
+        <div class="status-strip">
+            <span class="pill success">● Ollama</span>
+            <span class="pill">Windows</span>
+        </div>
+    </header>
+
+    <div class="workspace-layout">
+        <aside class="sidebar">
+            <div class="panel-title">Explorer</div>
+            <div class="section-block">
+                <div class="section-label">Projeto</div>
+                <div class="node">📁 src</div>
+                <div class="node child">├─ Domain</div>
+                <div class="node child">├─ Application</div>
+                <div class="node child">└─ Infrastructure</div>
+            </div>
+            <div class="section-block">
+                <div class="section-label">Sessões</div>
+                <div class="session-item">Hoje</div>
+                <div class="session-item muted">Ontem</div>
+            </div>
+        </aside>
+
+        <main class="content-panel">
+            @Body
+        </main>
+    </div>
+</div>

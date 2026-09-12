@@ -1,0 +1,11 @@
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\bin\Debug\net10.0\IDEIANF.Local.Domain.deps.json
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\bin\Debug\net10.0\IDEIANF.Local.Domain.dll
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\bin\Debug\net10.0\IDEIANF.Local.Domain.pdb
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.AssemblyInfoInputs.cache
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.AssemblyInfo.cs
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.csproj.CoreCompileInputs.cache
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.dll
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\refint\IDEIANF.Local.Domain.dll
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\IDEIANF.Local.Domain.pdb
+D:\projetos\ia-local-anf\src\IDEIANF.Local.Domain\obj\Debug\net10.0\ref\IDEIANF.Local.Domain.dll

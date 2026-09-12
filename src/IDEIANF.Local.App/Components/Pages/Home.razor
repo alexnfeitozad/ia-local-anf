@@ -1,0 +1,84 @@
+﻿@page "/"
+@inject IDEIANF.Local.Application.Services.IWorkspaceService WorkspaceService
+
+<PageTitle>IDEIANF Local</PageTitle>
+
+<div class="home-panel">
+    <section class="agent-card">
+        <div class="agent-header">
+            <div>
+                <div class="eyebrow">Workspace</div>
+                <h1>@(WorkspaceService.CurrentProject?.Name ?? "Nenhum projeto selecionado")</h1>
+            </div>
+            <button class="primary-btn" @onclick="SelectWorkspaceAsync">Selecionar projeto</button>
+        </div>
+
+        <div class="toolbar-row">
+            <label class="field-label">Diretório</label>
+            <input class="model-select" @bind="WorkspacePath" placeholder="D:\\Projetos\\MeuSistema" />
+        </div>
+
+        <div class="toolbar-row">
+            <label class="field-label">Modelo</label>
+            <select class="model-select">
+                <option>qwen2.5-coder:latest</option>
+                <option>llama3.1</option>
+                <option>codegemma</option>
+            </select>
+            <button class="secondary-btn">Cancelar</button>
+        </div>
+
+        <div class="task-box">
+            <label class="field-label">Tarefa</label>
+            <textarea rows="4" placeholder="Analise este projeto e me diga qual arquitetura ele utiliza."></textarea>
+        </div>
+
+        <div class="action-row">
+            <button class="primary-btn">Executar</button>
+        </div>
+    </section>
+
+    <section class="logs-card">
+        <div class="logs-header">
+            <span class="section-label">Execução</span>
+            <span class="status-badge">Running</span>
+        </div>
+
+        <div class="log-stream">
+            <div class="log-entry">🧠 Analisando projeto...</div>
+            <div class="log-entry">📖 Lendo arquivos relevantes...</div>
+            <div class="log-entry">🔎 Procurando padrões de arquitetura...</div>
+            <div class="log-entry">✅ Projeto identificado e pronto para execução.</div>
+        </div>
+    </section>
+</div>
+
+@if (WorkspaceService.CurrentProject is not null)
+{
+    <div class="project-details">
+        <div class="detail-item"><strong>Diretório:</strong> @WorkspaceService.CurrentProject.RootPath</div>
+        <div class="detail-item"><strong>Solução:</strong> @(WorkspaceService.CurrentProject.SolutionFile ?? "Nenhuma")
+        </div>
+        <div class="detail-item"><strong>Arquivos:</strong> @string.Join(", ",
+                    WorkspaceService.CurrentProject.TopLevelEntries)</div>
+        </div>
+    }
+
+@code {
+    private string WorkspacePath { get; set; } = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+    private Task SelectWorkspaceAsync()
+    {
+        if (string.IsNullOrWhiteSpace(WorkspacePath))
+        {
+            return Task.CompletedTask;
+        }
+
+        if (WorkspaceService.TrySetCurrentWorkspaceRoot(WorkspacePath))
+        {
+            Console.WriteLine($"Workspace definido: {WorkspacePath}");
+        }
+
+        return Task.CompletedTask;
+    }
+}

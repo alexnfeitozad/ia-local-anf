@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\anfsu\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.modules.json",
+      "PackagePath": "staticwebassets\\_framework\\blazor.modules.json"
+    },
+    {
+      "Id": "C:\\Users\\anfsu\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.webview.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webview.js"
+    },
+    {
+      "Id": "D:\\projetos\\ia-local-anf\\src\\IDEIANF.Local.App\\obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\IDEIANF.Local.App.styles.css",
+      "PackagePath": "staticwebassets\\IDEIANF.Local.App.styles.css"
+    },
+    {
+      "Id": "D:\\projetos\\ia-local-anf\\src\\IDEIANF.Local.App\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\projetos\\ia-local-anf\\src\\IDEIANF.Local.App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.IDEIANF.Local.App.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.IDEIANF.Local.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.build.IDEIANF.Local.App.props",
+      "PackagePath": "build\\IDEIANF.Local.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildMultiTargeting.IDEIANF.Local.App.props",
+      "PackagePath": "buildMultiTargeting\\IDEIANF.Local.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildTransitive.IDEIANF.Local.App.props",
+      "PackagePath": "buildTransitive\\IDEIANF.Local.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
